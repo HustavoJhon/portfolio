@@ -9,6 +9,15 @@
 
 /* Link active work */ 
 
+/*=============== CHANGE TITLE WHEN USER CHANEGS TAB  ===============*/
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "come back :(";
+})
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+})
+
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 
